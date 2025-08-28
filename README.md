@@ -21,7 +21,7 @@ uv pip install torch transformers datasets accelerate tqdm rich
 
 ## How it works
 ### Model
-The model used is DistilBERT, which is pretrained for masked language modeling. It is an encoder-only transformer well-suited for our purposes. Otherwise, you can swap it for language model - even a "decoder-only" transformer like GPT - just make sure the attention mask is full of 1s instead of causal.
+The model used is DistilBERT, which is pretrained for masked language modeling. It is an encoder-only transformer well-suited for our purposes. Otherwise, you can swap it for any other language model - even a "decoder-only" transformer like GPT - just make sure the attention mask is full of 1s instead of causal.
 
 ### Training
 The training script is adapted from Algorthms 1 and 2 from the Nie et al. paper:
